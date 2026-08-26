@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i class="fa-brands fa-github"></i>
+        GitHub Profile Finder
+      </h1>
+
+      <p>Search any GitHub username and explore their profile 🚀</p>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter Github username"
+          />
+
+          <button id="searchBtn">Search</button>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <!-- Left Side -->
+        <div class="profile-left">
+          <img
+            src="https://avatars.githubusercontent.com/u/583231?v=4"
+            alt="Profile Picture"
+            id="avatar"
+          />
+
+          <h2 id="name">The Octocat</h2>
+
+          <p id="username">@octocat</p>
+
+          <p id="bio">This profile has no bio.</p>
+
+          <div class="info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              <span id="location">San Francisco</span>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-link"></i>
+              <span id="website">https://github.com</span>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-calendar"></i>
+              <span id="joined">Joined Jan 25, 2011</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="profile-right">
+          <!-- Statistics -->
+          <div class="stats">
+            <div class="stat-card">
+              <h3 id="repos">0</h3>
+              <p>Repositories</p>
+            </div>
+
+            <div class="stat-card">
+              <h3 id="followers">0</h3>
+              <p>Followers</p>
+            </div>
+
+            <div class="stat-card">
+              <h3 id="following">0</h3>
+              <p>Following</p>
+            </div>
+          </div>
+
+          <!-- Repository Section -->
+          <div class="repository-section">
+            <h2>Top Repositories</h2>
+
+            <div id="repoList">
+              <p>Repositories will appear here...</p>
+            </div>
+          </div>
+
+          <!-- View Profile Button -->
+          <div class="profile-btn">
+            <a href="#" id="profileLink" target="_blank">
+              View GitHub Profile
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Powered by GitHub API ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

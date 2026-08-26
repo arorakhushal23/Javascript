@@ -1,0 +1,201 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d1117;
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+header p{
+    color:#b3b3b3;
+    font-size:1rem;
+}
+.search-box{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:12px;
+
+    overflow:hidden;
+}
+.search-box i{
+    padding:0 15px;
+    color:#8b949e;
+    font-size:18px;
+}
+.search-box input{
+    flex:1;
+    padding:15px 10px;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    font-size:16px;
+}
+.profile-section{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto 40px;
+
+    display:flex;
+    gap:30px;
+
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:16px;
+
+    padding:30px;
+    overflow: hidden;
+}
+.profile-left{
+    flex:1 1 0;
+    min-width:0;
+}
+
+.profile-right{
+    flex:1 1 0;
+    min-width:0;
+}
+.profile-left img{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    display:block;
+    margin-bottom:20px;
+
+    border:3px solid #30363d;
+}
+.profile-left h2{
+    font-size:28px;
+    margin-bottom:5px;
+}
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.info p{
+    color:#8b949e;
+
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+}
+.info i{
+    width:20px;
+    text-align:center;
+}
+
+
+.stats{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+.stat-card{
+    flex:1 1 0;
+    min-width:0;
+
+    background:#0d1117;
+    border:1px solid #30363d;
+    border-radius:10px;
+
+    padding:20px;
+
+    text-align:center;
+}
+.stat-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+.stat-card p{
+    color:#8b949e;
+    font-size:14px;
+}
+.repository-section h2{
+    font-size:20px;
+    margin-bottom:15px;
+}
+#repoList{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.profile-btn{
+    margin-top:25px;
+}
+.profile-btn a{
+    display:inline-block;
+
+    padding:12px 20px;
+
+    background:#238636;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:0.3s;
+}
+.profile-btn a:hover{
+    background:#2ea043;
+}
+footer{
+    text-align:center;
+    padding:30px 20px;
+
+    color:#8b949e;
+    font-size:14px;
+}
+
+.repo-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px;
+
+    background:#0d1117;
+    border:1px solid #30363d;
+    border-radius:8px;
+
+    transition:0.3s;
+}
+.repo-card h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+.repo-card p{
+    color:#8b949e;
+    font-size:14px;
+}
+.repo-card span{
+    color:#f0f6fc;
+    white-space:nowrap;
+}
+.repo-card:hover{
+    border-color:#58a6ff;
+    transform:translateY(-2px);
+}
