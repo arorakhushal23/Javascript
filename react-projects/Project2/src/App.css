@@ -207,8 +207,9 @@ body {
 }
 
 .product-image {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 260px;
 
   object-fit: cover;
 
@@ -359,16 +360,37 @@ body {
   background: #333;
 }
 
+.simple-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.simple-page h1 {
+  margin-bottom: 16px;
+}
+
+.simple-page p {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.page-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
-
-  .nav-links {
-    display: none;
-  }
-
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -383,6 +405,15 @@ body {
 
   .navbar-container {
     height: 64px;
+    padding: 0 16px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
   }
 
   .products-page {
@@ -397,8 +428,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .product-image-wrapper {
-    height: 420px;
+  .product-image {
+    height: 300px;
   }
 
   .products-toolbar {
